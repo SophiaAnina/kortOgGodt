@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kort&Godt</title>
+  <script src="https://kit.fontawesome.com/93d776830d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Style/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "-xPZZuJjQyrzhWuV6",
+        });
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            
+            // these IDs from the previous steps
+            emailjs.sendForm('service_s1kx54e', 'template_ud1rrsj', this)
+                .then(() => {
+
+                    
+                    console.log('SUCCESS!');
+                    // form.current.reset();
+                    document.getElementById("sent1").value = ""
+                    document.getElementById("sent2").value = ""
+                    document.getElementById("sent3").value = ""
+
+                    // document.getElementById("submit").addEventListener("click", function() {
+                        document.getElementById("done").style.display = "block";
+                        document.getElementById("sending").style.display = "none"; 
+                    // });
+
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+
+                document.getElementById("sending").style.display = "block"; // her, har vi endnu ikke fået svar fra emailjs.
+        });
+    }
+
+    const person = {
+        firstname: "Emil",
+        lastname: "Hansen",
+        age: 22,
+        model: "email"
+
+    };
+
+    console.log (person)
+    
+    document.getElementById("person").textContent = person.type + " " + person.firstname + " " + person.lastname + " " + person.age + "years " + person.model
+
+    function getfirstname(person){
+        return personObject.firstname;
+    }
+
+    console.log(getFirstname(person))
+</script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="indeks.html"><img src="./img/png/logo_blaat.kortoggodt.png" alt=""></a>
+  </div>
+  <div class="topnav" id="myTopnav">
+      <a href="indeks.html" class="button">Forside</a>
+      <a href="historie.html" class="button">Historie</a>
+      <a href="omos.html" class="button">Om os</a>
+      <a href="kontakt.html" class="button">Kontakt</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+      </a>
+  </div>
+  </nav>
+  <main>
+    <p id="person"> </p>
+
+    <form class="info" id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Navn</label>
+        <input id="sent1" type="text" name="from_name">
+        <label>E-mail</label>
+        <input id="sent2" type="email" name="reply_to">
+        <label>Besked</label>
+        <textarea id="sent3" name="message"></textarea>
+        <input id="submit" type="submit" value="Send">
+        <div id="done">Tak for din e-mail.</div>
+        <div id="sending">Øjeblik, vi sender din email</div>
+    </form>
+  </main>
+<footer>
+  <img src="img/png/logo_orange.kortoggodt.png" alt="">
+  <div class="icons">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-tiktok"></i>
+</div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
