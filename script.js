@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('searchInput');
   const filterCheckboxes = document.querySelectorAll('.filterCheckbox');
