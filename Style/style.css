@@ -200,7 +200,7 @@ p{
   height: 100%;
   width: 100%;
   position: relative;
-  transition: transform 1500ms;
+  transition: transform 3s ;
   transform-style: preserve-3d ;
 }
 .front,.bagside{
@@ -240,9 +240,7 @@ main{
 .seq-1-intro h2{
   margin-top: -20px;
 }
-.seq-2 h2{
-  margin-top: 20px;
-}
+
 .seq-1{
   display: grid;
   justify-items: center;
@@ -348,27 +346,30 @@ main{
 
 /* Månedens  spil*/
 .seq-2-spil{
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: #268275;
-  padding: 30px 0;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 30px;
 }
-.seq-2-spil h2{
-  grid-column: 2/3;
+.seq-2-spil h3{
   color: #f6f6f6;
+  font-weight: 300;
+  margin: 0 0 -23px 20px;
+  padding: 0;
 }
 .seq-2-spil h1{
-  grid-column: 2/3;
   color: #e9c46a;
   font-size: 48px;
+  margin: 0;
+  padding: 0;
 }
 .seq-2-spil img{
   width: 160px;
+  justify-self: center;
+  align-self: flex-end;
 }
 .seq-2-spil p{
-  width: 160px;
-  grid-column: 2/3;
   color: #f6f6f6;
   font-size: 20px;
 }
@@ -377,12 +378,7 @@ main{
   color: black;
   border-radius: 0.2em;
   border: none;
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  align-self: flex-end;
-  width: fit-content;
- height: fit-content;
-  padding: 8px 32px;
+  padding: 6px 32px;
 
 }
 .seq-2-spil a{
@@ -390,56 +386,36 @@ main{
   text-decoration: none;
 }
 /* Webshop-  */
-.background{
-  height: 368px;
-    width: -webkit-fill-available;
-}
-.background img{
-  height: 427px;
-  width: 335px;
-}
 .seq-3{
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 30px ;
     background-image: url(/img/png/webshop-baggrund.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 30px;
 }
 .seq-3 h1{
-  grid-row: 1 / 3;
-    grid-column: 1 / 3;
     height: fit-content;
     color: #f89d57;
     font-size: 48px;
-    align-self: center;
+
 }
 
 .seq-3 h2{
-  grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    justify-self: center;
     color: #f6f6f6;
 }
 .seq-3 h3{
-  grid-row: 1;
-  grid-column: 1/3;
   font-weight: 300;
-  align-self: center;
-color: #f6f6f6;
+ color: #f6f6f6;
+ margin: 0 0 -23px 20px;
 }
 .seq-3 img{
-  width: 100px;
-    grid-row: 3 / 5;
-    grid-column: 3 / 5;
     justify-self: center;
     transform: rotate(16deg);
 }
 .seq-3 p{
   color: #f6f6f6;
-  grid-row: 2 / 4;
-      align-self: center;
       font-size: 20px;
       width: 220px;
 }
@@ -451,11 +427,8 @@ color: #f6f6f6;
     padding: 6px 32px;
     border-radius: 0.2em;
     border: none;
-    grid-row: 4 / 6;
-    grid-column: 1 / 2;
     align-self: center;
     justify-self: center;
-    font-size: 16px;
 }
 .seq-3 a{
   text-decoration: none;
@@ -548,6 +521,7 @@ color: #f6f6f6;
   grid-column: 2/3;
   grid-row: 2/4;
   align-self: center;
+  justify-self: center;
 }
 .kontakt .icons{
   grid-column: 2/3;
@@ -707,7 +681,7 @@ color: #f6f6f6;
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom:0 ;
+  bottom: 50px ;
   right: 0;
 }
 .pink-knap p{
@@ -793,7 +767,7 @@ color: #f6f6f6;
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom:0 ;
+  bottom: 50px;
   right: 0;
 }
 .roed-knap p{
@@ -830,10 +804,10 @@ background-color:#e96449;
 display: flex;
 justify-content: space-between;
 font-size: 2em;
-padding:0 20px;
+padding:10px 20px;
 }
 footer img{
-  width: 80px;
+  width: 100px;
 }
 .icons{
   align-content: center;
@@ -983,16 +957,422 @@ article {
 /* Footer */
 .fa-facebook{
   margin: 0 10px;
+  font-size: 0.7em;
+  width: fit-content;
 }
 .fa-instagram{
   margin: 0 10px;
+  font-size: 0.7em;
+  width: fit-content;
 }
 .fa-tiktok{
   margin: 0 10px;
+  font-size: 0.7em;
+  width: fit-content;
 }
+.hidden {
+  display: none;
+}
+}
+@media screen and (max-width: 320px) {
+  .logo{
+    padding: 0;
+  }
+  main-s{
+    padding: 20px;
+  }
+  .seq-1{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .seq-1 h1{
+    color: #f89d57;
+  }
+  .seq-1 h2{
+    font-size: 33px;
+  }
+  .underoverskrift-højre {
+    justify-self: end;
+    margin: -20px 10px;
+  }
+  .underoverskrift-venstre {
+    justify-self: flex-start;
+    margin: -20px 6px;
+  }
+  .seq-1 img{
+    width: 170px;
+  }
+  .fa-chevron-down{
+    color: #f89d57;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  /* Søgefunktions */
+  #searchengine{
+    display: flex;
+    justify-items: center;
+   
+    margin: 0;
+  }
+  #searchInput{
+    padding: 10px 24px;
+  }
+
+  .options{
+    display: none;
+  }
+  .icon-filter{
+      font-size: 22px;
+      margin: 0 10px;
+  }
+  .optionsresponsive{
+    display: grid;
+    position: fixed;
+    width: -webkit-fill-available;
+    background: white;
+    z-index: 2;
+    top: 285px;
+    left: 0;
+    padding: 20px;
+  }
+  .icon-luk{
+    justify-self: end;
+      margin: 10px;
+      color: black;
+      font-size: 1.5em;
+      position: absolute;
+  }
+  .optionsresponsive p{
+    margin: 0;
+  }
+  .item p{
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+  }
+
+  /* Scrollbar */
+  #slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-self: center;
+  }
+  .hidden {
+    display: none;
+  }
+  /* Månedens  spil*/
+  .seq-2-spil{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+  }
+
+  .seq-2-spil h1{
+    font-size: 33px;
+    padding: 0;
+    margin: 0;
+    line-height: 2.5;
+  }
+  
+  .seq-2-spil p{
+    font-size: 16px;
+    padding: 10px 5px 10px 0;
+    
+      }
+
+  .seq-2-spil button{
+    color: white;
+    padding: 8px 32px;
+    border-radius: 0.2em;
+    border: none;
+  }
+
+  .seq-2-spil a{
+    text-decoration: none;
+    font-size: 16px;
+  }
+  /* Kort grid */
+  #itemsContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Webshop */
+
+  .seq-3 h1{
+        height: fit-content;
+        color: #f89d57;
+        font-size: 33px;
+        margin: 0;
+    }
+
+  .seq-3 h2{
+      justify-self: center;
+    color: #f6f6f6 ;
+
+  }
+  .seq-3 h3{
+    font-weight: 300;
+    color: #f6f6f6 ;
+  }
+  .seq-3 img{
+    width: 100px;
+      justify-self: center;
+      transform: rotate(16deg);
+  }
+  
+  .seq-3 button{
+    background-color: #268275;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 0.2em;
+    border: none;
+    align-self: center;
+    justify-self: self-start;
+      }
+
+  .seq-3 a{
+    text-decoration: none;
+    color: #f6f6f6 ;
+    font-size: 16px;
+    font-family:'Anek Devanagari';
+    font-weight: 300;
+  }
+  /* Regelsider */
+  .gul-knap{
+    position: static;
+  }
+  /* Kontakt-side */
+.kontakt{
+  margin: 0 20px 20px 20px;
+  grid-template-columns: 1fr;
 }
 
+.info-titel{
+  margin: 0;
+}
+#sent1, #sent2, #sent3, #submit{
+  width: -webkit-fill-available;
+    font-size: 20px;
+}
+#sent3{
+  height: 130px;
+}
+.kontakt-tekst {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+  align-self: center;
+}
+/*Om os  */
+.learings-centralen p{
+  font-size: 1.2em;
+ }
+footer{
+  padding: 10px 5px;
+}
+}
+@media screen and (max-width: 500px){
+  body{
+    padding: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .smugkig{
+    width: 200px;
+  }
+  #slider{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+  }
+  .seq-2-spil img{
+    width: 100px;
+  }
+  .seq-2-spil p{
+    font-size: 16px;
+  }
+  .seq-3 p{
+    font-size: 16px;
+  }
+  #slider{
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+  }
+  
+}
+
+@media screen and (max-width: 634px) {
+
+  .seq-1{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .seq-1 h1{
+    color: #f89d57;
+  }
+  .seq-1 h2{
+    font-size: 33px;
+  }
+  .underoverskrift-højre {
+    justify-self: end;
+    margin: -20px 10px;
+  }
+  .underoverskrift-venstre {
+    justify-self: flex-start;
+    margin: -20px 6px;
+  }
+  .seq-1 img{
+    width: 170px;
+  }
+  .fa-chevron-down{
+    color: #f89d57;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  /* Søgefunktions */
+ 
+  #searchInput{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+  }
+  .options{
+    display: none;
+  }
+  .icon-filter{
+      font-size: 22px;
+      margin: 0 10px;
+  }
+  .optionsresponsive{
+    display: grid;
+    position: fixed;
+    width: -webkit-fill-available;
+    background: white;
+    z-index: 2;
+    top: 285px;
+    left: 0;
+    padding: 20px;
+  }
+  .icon-luk{
+    justify-self: end;
+      margin: 10px;
+      color: black;
+      font-size: 1.5em;
+      position: absolute;
+  }
+  .optionsresponsive p{
+    margin: 0;
+  }
+  .item p{
+    display: none;
+    margin: 0;
+    height: 0;
+  }
+
+  /* Scrollbar */
+  #slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+  }
+  .item{
+    width: 140px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  /* Månedens  spil*/
+  .seq-2-spil{
+    padding: 20px;
+  }
+  
+
+  .seq-2-spil p{
+   
+    font-size: 16px;
+    padding: 10px 5px 10px 0;
+    line-height: 1.5;
+      }
+
+  .seq-2-spil button{
+    color: white;
+    padding: 8px 32px;
+    border-radius: 0.2em;
+    border: none;
+  
+  }
+
+  .seq-2-spil a{
+    text-decoration: none;
+    font-size: 16px;
+  }
+  /* Webshop */
+  .seq-3 h1{
+      height: fit-content;
+      color: #f89d57;
+      font-size: 36px;
+  }
+
+  .seq-3 h3{
+    font-weight: 300;
+    align-self: self-end;
+    color: #f6f6f6 ;
+  }
+  .seq-3 img{
+    width: 100px;
+      justify-self: center;
+      transform: rotate(16deg);
+  }
+  .seq-3 p{
+    font-size: 20px;
+    width: 150px;
+  }
+  .seq-3 button{
+    background-color: #268275;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 0.2em;
+    border: none;
+      }
+
+  .seq-3 a{
+    text-decoration: none;
+    color: #f6f6f6 ;
+    font-size: 16px;
+    font-family:'Anek Devanagari';
+    font-weight: 300;
+  }
+}
 @media screen and (min-width: 640px){
+  .overblik{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+  .info{
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .regler1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .tekst-højre{
+    padding-left: 10px;
+  }
+  .tekst-venstre{
+    padding-right: 10px;
+  }
+  .ilu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ilu img{
+    width: 600px;
+  }
   .overblik{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1032,9 +1412,31 @@ article {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  
+  #slide{
+    grid-template-columns: 1fr 1fr ;
+  }
+  .hidden {
+    display: none;
+  }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 600px) {
+ 
+  #slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-self: center;
+  }
+  .container-flip{
+    width: auto;
+    height: 150px;
+    padding: 20px;
+    perspective: 600px;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px){
   .topnav a{
       display: none;
   }
@@ -1042,6 +1444,7 @@ article {
   .topnav .icon{
       display: block;
   }
+/* denne klasse bliver skabt af javascrbt når man klikker på burger menuen */
   .responsive{
       position: relative;
       flex-direction: column;
@@ -1062,51 +1465,100 @@ article {
       width: 100%;
       text-align: center;
   }
-  .side-menu{
+  .topnav a{
     display: none;
-  }
-  /* Om Os */
-  .learings-centralen {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
 }
-  .OmOs {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+
+.topnav .icon{
+    display: block;
+}
+.responsive{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+}
+.responsive a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.responsive .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.responsive .button{
+    width: 100%;
+    text-align: center;
+}
+.side-menu{
+  display: none;
+}
+#slider{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin: 27px;
+}
+/* Om Os */
+.learings-centralen {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+.OmOs {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 .OmOs-tekst-1 {
-  font-size: 1.8em;
-  grid-column: 1 / 2;
-  align-self: flex-end;
+font-size: 1.8em;
+grid-column: 1 / 2;
+align-self: flex-end;
 }
 .OmOs-tekst-2 {
-  font-size: 1.8em;
-  grid-row: 5 / 6;
-  grid-column: 1 / 2;
+font-size: 1.8em;
+grid-row: 5 / 6;
+grid-column: 1 / 2;
 }
 .omOsBillede {
-  justify-self: center;
-  width: 95%;
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  margin: 20px;
+justify-self: center;
+width: 95%;
+grid-column: 1 / 2;
+grid-row: 4 / 5;
+margin: 20px;
 }
 .VoresSamarbejdsPartner {
-  grid-column: 1 / 3;
-  grid-row: 6 / 7;
+grid-column: 1 / 3;
+grid-row: 6 / 7;
 }
 .VoresSamarbejdsPartner-tekst {
-  font-size: 1.8em;
-  grid-column: 1 / 2;
-  grid-row: 7 / 8;
+font-size: 1.8em;
+grid-column: 1 / 2;
+grid-row: 7 / 8;
 }
 section {
-  width: 100%;
-  overflow: hidden;
-  grid-column: 1 / 3;
-  grid-row: 8 / 9;
+width: 100%;
+overflow: hidden;
+grid-column: 1 / 3;
+grid-row: 8 / 9;
 }
+/*Om os  */
+.learings-centralen p{
+  font-size: 1.2em;
+ }
+ .hidden {
+  display: none;
+}
+}
+@media screen and (min-width:800px) {
+  #slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+  }
+  .hidden {
+    display: none;
+  }
 }
 @media screen and (min-width: 900px){
   .main-class{
@@ -1117,6 +1569,7 @@ section {
     "side-menu indhold"
     "footer footer" ;
   }
+  
   .side-menu{
     display: block;
     background-color: #264554;
@@ -1228,7 +1681,9 @@ h2#weather {
   .main-kontakt .social svg{
       padding-right: 50px;
   }
-
+  .hidden {
+    display: none;
+  }
 /*emial style*/
 .info{
   font-family: Arial, Helvetica, sans-serif;
@@ -1248,6 +1703,136 @@ h2#weather {
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
+}
+
+}
+@media screen and (max-width: 900px) {
+   
+  /* Kontakt-side */
+.kontakt{
+  margin: 0 20px 20px 20px;
+  grid-template-columns: 1fr;
+}
+
+.info-titel{
+  margin: 0;
+}
+#sent1, #sent2, #sent3, #submit{
+  width: -webkit-fill-available;
+    font-size: 20px;
+}
+#sent3{
+  height: 130px;
+}
+.kontakt-tekst {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+  align-self: center;
+  justify-self: baseline;
+  
+}
+.hidden {
+  display: none;
+}
+}
+@media screen and (max-width: 1100px) {
+  /* Søgefunktion - tablet */
+
+
+  /* Spillekort - tablet  */
+ 
+ /* Månedens spil- fane- tablet */
+
+
+/* Webshop-fane Tablet */
+.seq-3 h1{
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+.seq-3 h3{
+  font-size: 16px;
+  align-self: flex-end;
+}
+.seq-3 p{
+  width: 220px;
+}
+
+.seq-3 a{
+  font-size: 16px;
+}
+/* Kontakt */
+.kontakt{
+  margin: 40px;
+}
+.info-titel{
+  margin-left: 35px;
+}
+/*Om os  */
+.learings-centralen p{
+  font-size: 1.5em;
+ }
+ .OmOs-tekst-2{
+  grid-column: 1/3;
+ }
+ .hidden {
+  display: none;
+}
+}
+@media screen and (min-width: 1000px) {
+  /* Main */
+  .main-s {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  .seq-1{
+    display: none;
+  }
+
+  #searchengine{
+    justify-content: center;
+    grid-column: 1/5;
+  }
+
+  .fa-chevron-left{
+    position: absolute;
+    left: 30px;
+    top: 383px;
+    font-size: 30px;
+  }
+  .fa-chevron-right{
+    position: absolute;
+    right: 30px;
+    top: 383px;
+    font-size: 30px;
+  }
+
+  .optionsresponsive{
+    top: 153px;
+    left: 1045px;
+    width: 193px;
+    position: absolute;
+}
+#slider{
+  display: grid;
+  grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-column: 1 / 5;
+   margin-bottom: 20px;
+  
+}
+
+  #itemsContainer{
+   grid-template-rows: 1fr;
+   overflow-x: scroll;
+   grid-column: 1 / 5;
+   margin-bottom: 20px;
+}
+.seq-3 p{
+  font-size: 20px;
+}
+.hidden {
+  display: none;
 }
 }
 @media screen and (min-width: 1400px){
@@ -1314,653 +1899,13 @@ h2#weather {
   .tekst{
     font-size: 1.8em;
     font-weight: 600;
-    margin-left: -120px;
+    margin-left: -90px;
   }
   .historie{
     margin-left: 300px;
     margin-right: 300px;
   }
-}
-@media screen and (max-width: 375px){
-  body{
-    padding: 0;
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-  .smugkig{
-    width: 200px;
-  }
-}
-@media screen and (max-width: 780px){
-  .topnav a{
-      display: none;
-  }
-
-  .topnav .icon{
-      display: block;
-  }
-/* denne klasse bliver skabt af javascrbt når man klikker på burger menuen */
-  .responsive{
-      position: relative;
-      flex-direction: column;
-      align-items: center;
-      padding: 65px 0;
-  }
-  .responsive a{
-      display: block;
-      text-decoration: none;
-      font-size: 1.2rem;
-  }
-  .responsive .icon{
-      position: absolute;
-      top: 0;
-      right: 0;
-  }
-  .responsive .button{
-      width: 100%;
-      text-align: center;
-  }
-}
-@media screen and (min-width: 640px){
-  .overblik{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-  }
-  .info{
-    margin-top: 15px;
-    margin-left: 20px;
-  }
-  .regler1{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .tekst-højre{
-    padding-left: 10px;
-  }
-  .tekst-venstre{
-    padding-right: 10px;
-  }
-  .ilu{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .ilu img{
-    width: 600px;
-  }
-  
-}
-@media screen and (max-width: 1100px) {
-  /* Søgefunktion - tablet */
-
-
-  /* Spillekort - tablet  */
-  #slider{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
- /* Månedens spil- fane- tablet */
-
-  .seq-2-spil{
-    padding: 30px;
-  }
-  .seq-2-spil h1 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-
-}
-  .seq-2-spil h2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: flex-start;
-}
-
-.seq-2-spil p {
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
-  justify-self: flex-start;
-  width: 300px;
-  font-size: 16px;
-}
-  .seq-2-spil img {
-    grid-column: 2 / 5;
-    grid-row: 3 / 5;
-    width: 210px;
-
-}
-.seq-2 button{
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
-  align-self: end;
-
-}
-/* Webshop-fane Tablet */
-.seq-3{
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.seq-3 h1{
-  margin: 0;
-  padding: 0;
-  align-self: flex-end;
-}
-.seq-3 h3{
-  font-size: 24px;
-  grid-column: 1/2;
-  align-self: flex-end;
-}
-.seq-3 p{
-  width: 220px;
-  font-size: 16px;
-  grid-column: 1/2;
-  grid-row: 3;
-}
-
-
-.seq-3 a{
-  font-size: 24px;
-}
-}
-@media screen and (min-width: 1000px) {
-  /* Main */
-  .main-s {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-}
-  .seq-1{
-    display: none;
-  }
-
-  #searchengine{
-    justify-content: center;
-    grid-column: 1/5;
-  }
-
-  .fa-chevron-left{
-    position: absolute;
-    left: 30px;
-    top: 383px;
-    font-size: 30px;
-  }
-  .fa-chevron-right{
-    position: absolute;
-    right: 30px;
-    top: 383px;
-    font-size: 30px;
-  }
-
-  .optionsresponsive{
-    top: 210px;
-    left: 1088px;
-    width: 193px;
-    position: absolute;
-}
-#slider{
-  display: grid;
-  grid-template-rows: 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-column: 1 / 5;
-   margin-bottom: 20px;
-   animation: slider ease-in-out 60s;
-}
-
-  #itemsContainer{
-   grid-template-rows: 1fr;
-   overflow-x: scroll;
-   grid-column: 1 / 5;
-   margin-bottom: 20px;
-}
-.seq-2-spil{
-  grid-template-columns: 1fr 1fr;
-  height: fit-content;
-}
-.seq-2-spil img{
-  grid-column: 2 / 3;
-    grid-row: 2 / 5;
-    width: 210px;
-}
-.seq-2-spil h2 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  margin: 0;
-}
-.seq-2-spil h1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-
-}
-.seq-2-spil p {
-  grid-column: 1 / 2;
-  grid-row: 2/4;
-  width: 250px;
-  align-self: center;
-}
-.seq-2-spil button{
-  grid-column: 1 / 2;
-        grid-row: 3 / 5;
-        align-self: center;
-}
-
-.seq-3 img{
-  grid-column: 2 / 3;
-        grid-row: 2 / 4;
-        width: 150px;
-
-}
-.seq-3 button{
-  justify-self: start;
-
-}
-
-.seq-3 p{
-  font-size: 20px;
-  width: 220px;
-  grid-column: 1/2 ;
-  grid-row: 1 / 4;
-  align-self: end;
-}
-}
-@media screen and (max-width: 634px) {
-
-  .seq-1{
-    display: grid;
-    justify-items: center;
-    margin-bottom: 20px;
-  }
-  .seq-1 h1{
-    color: #f89d57;
-  }
-  .seq-1 h2{
-    font-size: 33px;
-  }
-  .underoverskrift-højre {
-    justify-self: end;
-    margin: -20px 10px;
-  }
-  .underoverskrift-venstre {
-    justify-self: flex-start;
-    margin: -20px 6px;
-  }
-  .seq-1 img{
-    width: 170px;
-  }
-  .fa-chevron-down{
-    color: #f89d57;
-    margin: 10px 0;
-    font-size: 20px;
-  }
-  /* Søgefunktions */
-  #searchengine{
-    display: flex;
-    justify-items: center;
-    width: 80%;
-    margin: 0;
-    padding: 10px;
-  }
-  #searchInput{
-    margin: 0;
-  }
-  .options{
-    display: none;
-  }
-  .icon-filter{
-      font-size: 22px;
-      margin: 0 10px;
-  }
-  .optionsresponsive{
-    display: grid;
-    position: fixed;
-    width: -webkit-fill-available;
-    background: white;
-    z-index: 2;
-    top: 285px;
-    left: 0;
-    padding: 20px;
-  }
-  .icon-luk{
-    justify-self: end;
-      margin: 10px;
-      color: black;
-      font-size: 1.5em;
-      position: absolute;
-  }
-  .optionsresponsive p{
-    margin: 0;
-  }
-  .item p{
-    display: none;
-    margin: 0;
-    height: 0;
-  }
-
-  /* Scrollbar */
-  #slider{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-items: center;
-  }
-  .item{
-    width: 140px;
-  }
-  .hidden {
-    display: none;
-  }
-  /* Månedens  spil*/
-  .seq-2-spil{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px;
-  }
-  .seq-2-spil h2{
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .seq-2-spil h1{
-    grid-column: 1/3;
-    grid-row: 2/3;
-   justify-self: self-start;
-   align-self: flex-start;
-  }
-  .seq-2-spil img{
-    width: 100px;
-    grid-row: 3 / 6;
-    grid-column: 2 / 5;
-    align-self: center;
-  }
-
-  .seq-2-spil p{
-    width: 155px;
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    font-size: 16px;
-    padding: 10px 5px 10px 0;
-    line-height: 1.5;
-      }
-
-  .seq-2-spil button{
-    color: white;
-    padding: 8px 32px;
-    border-radius: 0.2em;
-    border: none;
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    justify-self: flex-start;
-  }
-
-  .seq-2-spil a{
-    text-decoration: none;
-    font-size: 16px;
-  }
-  /* Webshop */
-
-  .seq-3{
-    display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      padding: 30px ;
-      background-image: url(/img/webshop-baggrund.png);
-  }
-  .seq-3 h1{
-    grid-row: 2 / 3;
-      grid-column: 1 / 3;
-      height: fit-content;
-      color: #f89d57;
-      font-size: 36px;
-  }
-
-  .seq-3 h3{
-    grid-row: 1;
-    grid-column: 1/3;
-    font-weight: 300;
-    align-self: self-end;
-    color: #f6f6f6 ;
-  }
-  .seq-3 img{
-    width: 100px;
-      grid-row: 3 / 5;
-      grid-column: 3 / 5;
-      justify-self: center;
-      transform: rotate(16deg);
-  }
-  .seq-3 p{
-    grid-column: 1 / 3;
-    grid-row: 3 / 5;
-    font-size: 16px;
-    width: 150px;
-  }
-  .seq-3 button{
-    background-color: #268275;
-    color: white;
-    padding: 8px 32px;
-    border-radius: 0.2em;
-    border: none;
-    grid-row: 5 / 6;
-    grid-column: 1 / 3;
-    align-self: end;
-    justify-self: self-start;
-      }
-
-  .seq-3 a{
-    text-decoration: none;
-    color: #f6f6f6 ;
-    font-size: 16px;
-    font-family:'Anek Devanagari';
-    font-weight: 300;
-  }
-}
-@media screen and (max-width: 320px) {
-  main-s{
-    padding: 20px;
-  }
-  .seq-1{
-    display: grid;
-    justify-items: center;
-    margin-bottom: 20px;
-  }
-  .seq-1 h1{
-    color: #f89d57;
-  }
-  .seq-1 h2{
-    font-size: 33px;
-  }
-  .underoverskrift-højre {
-    justify-self: end;
-    margin: -20px 10px;
-  }
-  .underoverskrift-venstre {
-    justify-self: flex-start;
-    margin: -20px 6px;
-  }
-  .seq-1 img{
-    width: 170px;
-  }
-  .fa-chevron-down{
-    color: #f89d57;
-    margin: 10px 0;
-    font-size: 20px;
-  }
-  /* Søgefunktions */
-  #searchengine{
-    display: flex;
-    justify-items: center;
-    width: fit-content;
-    margin: 0;
-  }
-  #searchInput{
-    padding: 10px 24px;
-  }
-
-  .options{
-    display: none;
-  }
-  .icon-filter{
-      font-size: 22px;
-      margin: 0 10px;
-  }
-  .optionsresponsive{
-    display: grid;
-    position: fixed;
-    width: -webkit-fill-available;
-    background: white;
-    z-index: 2;
-    top: 285px;
-    left: 0;
-    padding: 20px;
-  }
-  .icon-luk{
-    justify-self: end;
-      margin: 10px;
-      color: black;
-      font-size: 1.5em;
-      position: absolute;
-  }
-  .optionsresponsive p{
-    margin: 0;
-  }
-  .item p{
-    visibility: hidden;
-    margin: 0;
-    height: 0;
-  }
-
-  /* Scrollbar */
-  #slider{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .hidden {
-    display: none;
-  }
-  /* Månedens  spil*/
-  .seq-2-spil{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px;
-  }
-  .seq-2-spil h2{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    font-size: 24px ;
-    margin: 0;
-  }
-  .seq-2-spil h1{
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    justify-self: self-start;
-    align-self: flex-start;
-    font-size: 48px;
-    padding: 0;
-    margin: 0;
-    line-height: 2.5;
-  }
-  .seq-2-spil img{
-    width: 100px;
-    grid-row: 3 / 6;
-    grid-column: 2 / 5;
-    align-self: center;
-  }
-
-  .seq-2-spil p{
-    width: 155px;
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    font-size: 16px;
-    padding: 10px 5px 10px 0;
-    line-height: 1.5;
-      }
-
-  .seq-2-spil button{
-    color: white;
-    padding: 8px 32px;
-    border-radius: 0.2em;
-    border: none;
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    justify-self: flex-start;
-  }
-
-  .seq-2-spil a{
-    text-decoration: none;
-    font-size: 16px;
-  }
-  /* Webshop */
-
-  .seq-3{
-    display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      padding: 20px ;
-      background-image: url(/img/webshop-baggrund.png);
-  }
-  .seq-3 h1{
-    grid-row: 2 / 3;
-        grid-column: 1 / 3;
-        height: fit-content;
-        color: #f89d57;
-        font-size: 36px;
-        margin: 0;
-        padding: 0 0 10px 0;
-    }
-
-  .seq-3 h2{
-    grid-column: 1 / 5;
-      grid-row: 1 / 2;
-      justify-self: center;
-    color: #f6f6f6 ;
-
-  }
-  .seq-3 h3{
-    grid-row: 1;
-    grid-column: 1/3;
-    font-weight: 300;
-    align-self: self-end;
-    color: #f6f6f6 ;
-  }
-  .seq-3 img{
-    width: 100px;
-      grid-row: 3 / 5;
-      grid-column: 3 / 5;
-      justify-self: center;
-      transform: rotate(16deg);
-  }
-  .seq-3 p{
-   align-self: auto;
-        grid-column: 1 / 3;
-        grid-row: 3 / 5;
-        font-size: 16px;
-        width: 150px;
-  }
-  .seq-3 button{
-    background-color: #268275;
-    color: white;
-    padding: 8px 32px;
-    border-radius: 0.2em;
-    border: none;
-    grid-row: 4 / 6;
-    grid-column: 1 / 3;
-    align-self: center;
-    justify-self: self-start;
-      }
-
-  .seq-3 a{
-    text-decoration: none;
-    color: #f6f6f6 ;
-    font-size: 16px;
-    font-family:'Anek Devanagari';
-    font-weight: 300;
-  }
-  /* Regelsider */
-  .gul-knap{
-    position: static;
-  }
-}
-@media screen and (min-width: 1400px) {
-/*--------------flip animation--------------*/
+  /*--------------flip animation--------------*/
 .container-flip{
   width: 200px;
   height: 300px;
@@ -1979,7 +1924,7 @@ h2#weather {
   height: 100%;
   width: 100%;
   position: relative;
-  transition: transform 1500ms;
+  transition: transform 500ms;
   transform-style: preserve-3d ;
 }
 .front,.bagside{
@@ -2008,4 +1953,11 @@ height: 100%;
 .overblik{
   justify-items: center;
 }
+.hidden {
+  display: none;
 }
+}
+
+
+
+

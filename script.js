@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('searchInput');
-  const filterCheckboxes = document.querySelectorAll('.filterCheckbox');
+  const filterCheckboxes = document.querySelectorAll('filterOptions');
   const items = document.querySelectorAll('.item');
 
   searchInput.addEventListener('input', filterItems);
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
 function myFilter(){
   var x = document.getElementById("filterOptions");
   if (x.className === "options") {
@@ -35,7 +36,7 @@ function myFilter(){
       x.className = "options";
   }
 }
-function myFunction(){
+function myNav(){
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
    x.className += " responsive";

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Filter Links</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div class="checkboxes">
+            <label><input type="checkbox" class="filter" value="nem">nem</label>
+            <label><input type="checkbox" class="filter" value="middel">middel </label>
+            <label><input type="checkbox" class="filter" value="svær">svær</label>
+            
+            <label><input type="checkbox" class="filter" value="tre">3 spillere</label>
+            <label><input type="checkbox" class="filter" value="fire">4 spillere</label>
+            <label><input type="checkbox" class="filter" value="over">4 + spillere</label>
+        </div>
+        
+        <div class="links">
+            <a href="#" class="link" data-category="middel ">boomerang<div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>boomerang</p>
+                        <img src="./img/Designs/440551982_3645198509131874_3212044047689842999_n.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt=""></div>
+                </div>
+            </div></a>
+            <a href="#" class="link" data-category="nem">31</a>
+            <a href="#" class="link" data-category="middel">halv12</a>
+            <a href="#" class="link" data-category="svær">500</a>
+            <a href="#" class="link" data-category="nem">fisk</a>
+            <a href="#" class="link" data-category="nem">krig</a>
+            <a href="#" class="link" data-category="middel">casino</a>
+            <a href="#" class="link" data-category="nem">røvhul</a>
+        </div>
+    </div>
+    <div id="itemsContainer">
+        <div id="slider">
+          <a class="boomerang" href="boomerang.html">
+            <div class="item" data-tags="middel to tre over ">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>boomerang</p>
+                        <img src="./img/Designs/440551982_3645198509131874_3212044047689842999_n.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+          <a class="500" href="500.html">
+            <div class="item" data-tags="middel to tre over">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>500</p>
+                        <img src="./img/Designs/500_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/500_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+          <a class="halvtolv" href="halvtolv.html">
+            <div class="item" data-tags="svær over">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>halvtolv</p>
+                        <img src="./img/Designs/halv12_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/halv12_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+          <a class="asshole" href="asshole.html">
+            <div class="item" data-tags="nem tre over ">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>røvhul</p>
+                        <img src="./img/Designs/roevhul_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/roevhul_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+          <a class="casino" href="casino.html">
+            <div class="item" data-tags="middel over tre">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                      <p>casino</p>
+                        <img src="./img/Designs/casino_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/casino_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+          </div>
+          </a>
+          <a class="31" href="31.html">
+            <div class="item" data-tags=" nem tre over">
+                <div class="container-flip">
+                  <div class="kort">
+                      <div class="front">
+                        <p>31</p>
+                          <img src="./img/Designs/31_kort.bagside.png" alt="">
+                      </div>
+                      <div class="bagside"><img src="./img/Designs/31_kort.forside.png" alt=""></div>
+                  </div>
+              </div>
+            </div>
+            </a>
+          <a class="fisk" href="fisk.html">
+            <div class="item" data-tags="nem over tre">
+              <div class="container-flip">
+                <div class="kort">
+                  <p>fisk</p>
+                    <div class="front">
+                        <img src="./img/Designs/fisk_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/fisk_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+          <a class="krig" href="krig.html">
+            <div class="item" data-tags="nem over tre">
+              <div class="container-flip">
+                <div class="kort">
+                    <div class="front">
+                        <img src="./img/Designs/krig_kort.bagside.png" alt="">
+                    </div>
+                    <div class="bagside"><img src="./img/Designs/krig_kort.forside.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    <script src="søgebar.js"></script>
+</body>
+</html>

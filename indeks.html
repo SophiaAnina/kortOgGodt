@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Kort&Godt: ALVERDENS SPIL SAMLET ET STED. Find reglene til dit ynglings kortspil hurtigt og nemt eller opdag et helt nyt til spil til dig og dine venner">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kort&Godt</title>
   <script src="https://kit.fontawesome.com/93d776830d.js" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
       <a href="historie.html" class="button">Historie</a>
       <a href="omos.html" class="button">Om os</a>
       <a href="kontakt.html" class="button">Kontakt</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" class="icon" onclick="myNav()"><i class="fa fa-bars"></i>
       </a>
   </div>
   </nav>
@@ -37,7 +38,7 @@
     </div>
     <div id="searchengine">
 
-      <input type="text" id ="searchInput" placeholder="Søg Spil...">
+      <input name="searchbar" type="text" id ="searchInput" placeholder="Søg Spil...">
 
       <a href="javascript:void(0);" class="icon-filter" onclick="myFilter()">
       <i class="fa-solid fa-filter"></i></a>
@@ -46,121 +47,121 @@
         <a href="javascript:void(0);" class="icon-luk" onclick="myFilter()">
         <i class="fa-solid fa-xmark"></i></a>
         <p>Antal spillere</p>
-        <label><input type="checkbox" class="filterCheckbox" value="to">2 Spillere</label>
-        <label><input type="checkbox" class="filterCheckbox" value="tre">3 Spillere</label>
-        <label><input type="checkbox" class="filterCheckbox" value="over">3+ Spillere</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" to ">2 Spillere</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" tre ">3 Spillere</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" over ">3+ Spillere</label>
         <p>Tid</p>
-        <label><input type="checkbox" class="filterCheckbox" value="to">1-10min</label>
-        <label><input type="checkbox" class="filterCheckbox" value="tre">10-30min</label>
-        <label><input type="checkbox" class="filterCheckbox" value="over">30 + min</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" ti ">1-10min</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" tredive ">10-30min</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" overTredive ">30 + min</label>
         <p>Sværhedsgrad</p>
-        <label><input type="checkbox" class="filterCheckbox" value="nem">Nem</label>
-        <label><input type="checkbox" class="filterCheckbox" value="middel">Middel</label>
-        <label><input type="checkbox" class="filterCheckbox" value="svær">Svær</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" nem ">Nem</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" middel ">Middel</label>
+        <label><input  type="checkbox" class="filterCheckbox" value=" svear ">Svær</label>
       </div>
     </div>
 
     <div id="itemsContainer">
       <div id="slider">
-        <a class="slide-1" href="boomerang.html">
-          <div class="item" data-tags="middel to tre over ">
+        <a class="boomerang" href="boomerang.html">
+          <div class="item" data-tags=" middel to tre over ti ">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
                     <p>boomerang</p>
-                      <img src="./img/Designs/440551982_3645198509131874_3212044047689842999_n.png" alt="">
+                      <img src="./img/Designs/440551982_3645198509131874_3212044047689842999_n.png" alt="boomerang">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt="boomerang"></div>
               </div>
           </div>
           </div>
         </a>
-        <a class="slide-2" href="500.html">
-          <div class="item" data-tags="middel to tre over">
+        <a class="500" href="500.html">
+          <div class="item" data-tags=" middel to tre over tredive">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
                     <p>500</p>
-                      <img src="./img/Designs/500_kort.bagside.png" alt="">
+                      <img src="./img/Designs/500_kort.bagside.png" alt="500">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/500_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/500_kort.forside.png" alt="500"></div>
               </div>
           </div>
           </div>
         </a>
-        <a class="slide-3" href="halvtolv.html">
-          <div class="item" data-tags="svær over">
+        <a class="halvtolv" href="halvtolv.html">
+          <div class="item" data-tags=" svear over ti ">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
                     <p>halvtolv</p>
-                      <img src="./img/Designs/halv12_kort.bagside.png" alt="">
+                      <img src="./img/Designs/halv12_kort.bagside.png" alt="halvtolv">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/halv12_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/halv12_kort.forside.png" alt="halvtolv"></div>
               </div>
           </div>
           </div>
         </a>
-        <a class="slide-4" href="asshole.html">
-          <div class="item" data-tags="nem tre over ">
+        <a class="asshole" href="asshole.html">
+          <div class="item" data-tags=" nem tre over tredive ">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
                     <p>røvhul</p>
-                      <img src="./img/Designs/roevhul_kort.bagside.png" alt="">
+                      <img src="./img/Designs/roevhul_kort.bagside.png" alt="røvhul">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/roevhul_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/roevhul_kort.forside.png" alt="røvhul"></div>
               </div>
           </div>
           </div>
         </a>
-        <a class="slide-5" href="casino.html">
-          <div class="item" data-tags="middel over tre">
+        <a class="casino" href="casino.html">
+          <div class="item" data-tags=" svear over tre tredive ">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
                     <p>casino</p>
-                      <img src="./img/Designs/casino_kort.bagside.png" alt="">
+                      <img src="./img/Designs/casino_kort.bagside.png" alt="casino">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/casino_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/casino_kort.forside.png" alt="casino"></div>
               </div>
           </div>
         </div>
         </a>
-        <a class="slide-6" href="31.html">
-          <div class="item" data-tags=" nem tre over">
+        <a class="31" href="31.html">
+          <div class="item" data-tags=" nem tre over ti ">
               <div class="container-flip">
                 <div class="kort">
                     <div class="front">
                       <p>31</p>
-                        <img src="./img/Designs/31_kort.bagside.png" alt="">
+                        <img src="./img/Designs/31_kort.bagside.png" alt="31">
                     </div>
-                    <div class="bagside"><img src="./img/Designs/31_kort.forside.png" alt=""></div>
+                    <div class="bagside"><img src="./img/Designs/31_kort.forside.png" alt="31"></div>
                 </div>
             </div>
           </div>
           </a>
-        <a class="slide-7" href="fisk.html">
-          <div class="item" data-tags="nem over tre">
+        <a class="fisk" href="fisk.html">
+          <div class="item" data-tags=" nem over tre ti">
             <div class="container-flip">
               <div class="kort">
                 <p>fisk</p>
                   <div class="front">
-                      <img src="./img/Designs/fisk_kort.bagside.png" alt="">
+                      <img src="./img/Designs/fisk_kort.bagside.png" alt="fisk">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/fisk_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/fisk_kort.forside.png" alt="fisk"></div>
               </div>
           </div>
           </div>
         </a>
-        <a class="slide-8" href="krig.html">
-          <div class="item" data-tags="nem over tre">
+        <a class="krig" href="krig.html">
+          <div class="item" data-tags=" nem to ti ">
             <div class="container-flip">
               <div class="kort">
                   <div class="front">
-                      <img src="./img/Designs/krig_kort.bagside.png" alt="">
+                      <img src="./img/Designs/krig_kort.bagside.png" alt="krig">
                   </div>
-                  <div class="bagside"><img src="./img/Designs/krig_kort.forside.png" alt=""></div>
+                  <div class="bagside"><img src="./img/Designs/krig_kort.forside.png" alt="krig"></div>
               </div>
           </div>
           </div>
@@ -168,19 +169,21 @@
       </div>
     </div>
     <div class="seq-2-spil">
-    <h2>MÅNEDENS SPIL</h2>
+      <div class="tekst-sektion">
+    <h3>MÅNEDENS SPIL</h3>
     <h1>Boomerang</h1>
     <p>Har du hurtige reflekser, husker godt, og kan holde hovedet koldt i hektiske situationer, er dette sjove kortspil lige noget for dig!</p>
     <button><a href="Boomerang.html">REGLER</a></button>
-   
-    <img src="img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt="">
+   </div>
+    <img src="img/Designs/440709314_435666552739631_3631134015306238771_n.png" alt="boomerang">
     </div>
     <div class="seq-3">
-    <h2></h2>
+      <div class="tekst-sektion">
     <h3>BESØG VORES</h3>
     <h1>Webshop</h1>
     <p>Vi har alt hvad du behøver til et godt spil kort med vennerne - og mere til!</p>
     <button><a href="#">WEBSHOP</a></button>
+  </div>
     </div>
   </div>
 <footer>
