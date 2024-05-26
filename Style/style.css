@@ -293,7 +293,7 @@ main{
 
 }
 /* Filter- menu */
-.options{
+.filterOptions{
   display: none;
 }
 .icon-filter{
@@ -306,7 +306,7 @@ main{
 .fa-filter{
   align-self: center;
 }
-.optionsresponsive{
+.filterOptionsresponsive{
   display: grid;
   position: fixed;
   width: -webkit-fill-available;
@@ -323,7 +323,7 @@ main{
     font-size: 1.5em;
     position: absolute;
 }
-.optionsresponsive p{
+.filterOptionsresponsive p{
   margin: 0;
 }
 
@@ -379,11 +379,12 @@ main{
   border-radius: 0.2em;
   border: none;
   padding: 6px 32px;
-
+font-family: 'Anek Devanagari';
 }
 .seq-2-spil a{
   font-size: 16px;
   text-decoration: none;
+  color:black;
 }
 /* Webshop-  */
 .seq-3{
@@ -565,6 +566,9 @@ main{
   padding-right: 10px;
   padding-bottom: 4px;
 }
+.orange-knap a{
+  text-decoration: none;
+}
 .orange-knap:active{
   background-color: #ffffff;
   border: 2px #f89d57 solid;
@@ -654,6 +658,9 @@ main{
   padding-right: 10px;
   padding-bottom: 4px;
 }
+.groen-knap a{
+  text-decoration: none;
+}
 .groen-knap:active{
   background-color: #ffffff;
   border: 2px #00a08f solid;
@@ -697,6 +704,9 @@ main{
   padding-right: 10px;
   padding-bottom: 4px;
 }
+.pink-knap a{
+  text-decoration: none;
+}
 .pink-knap:active{
   background-color: #ffffff;
   border: 2px #fd9c8d solid;
@@ -733,6 +743,9 @@ main{
   font-weight: 400;
   padding-right: 10px;
   padding-top: 6px;
+}
+.blaa-knap a{
+  text-decoration: none;
 }
 .blaa-knap i{
   color: white;
@@ -782,6 +795,9 @@ main{
   font-size: 1.8em;
   padding-right: 10px;
   padding-bottom: 4px;
+}
+.roed-knap a{
+  text-decoration: none;
 }
 .roed-knap:active{
   background-color: #ffffff;
@@ -1019,14 +1035,14 @@ article {
     padding: 10px 24px;
   }
 
-  .options{
+  .filterOptions{
     display: none;
   }
   .icon-filter{
       font-size: 22px;
       margin: 0 10px;
   }
-  .optionsresponsive{
+  .filterOptionsresponsive{
     display: grid;
     position: fixed;
     width: -webkit-fill-available;
@@ -1043,7 +1059,7 @@ article {
       font-size: 1.5em;
       position: absolute;
   }
-  .optionsresponsive p{
+  .filterOptionsresponsive p{
     margin: 0;
   }
   .item p{
@@ -1236,14 +1252,14 @@ footer{
     padding: 0;
     width: 90%;
   }
-  .options{
+  .filterOptions{
     display: none;
   }
   .icon-filter{
       font-size: 22px;
       margin: 0 10px;
   }
-  .optionsresponsive{
+  .filterOptionsresponsive{
     display: grid;
     position: fixed;
     width: -webkit-fill-available;
@@ -1260,7 +1276,7 @@ footer{
       font-size: 1.5em;
       position: absolute;
   }
-  .optionsresponsive p{
+  .filterOptionsresponsive p{
     margin: 0;
   }
   .item p{
@@ -1342,6 +1358,10 @@ footer{
     font-size: 16px;
     font-family:'Anek Devanagari';
     font-weight: 300;
+  }
+  /* Regelsider */
+  iframe{
+    width: -webkit-fill-available;
   }
 }
 @media screen and (min-width: 640px){
@@ -1807,7 +1827,7 @@ h2#weather {
     font-size: 30px;
   }
 
-  .optionsresponsive{
+  .filterOptionsresponsive{
     top: 153px;
     left: 1045px;
     width: 193px;
@@ -1956,8 +1976,15 @@ height: 100%;
 .hidden {
   display: none;
 }
+.seq-2-spil a{
+    color:black;
 }
-
+}
+@media screen and (min-width: 1700px){
+    main{
+        margin:50px;
+    }
+}
 
 
 
